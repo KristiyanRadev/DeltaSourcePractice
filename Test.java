@@ -1,17 +1,29 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class USD_To_BGN {
+public class Application {
     public static void main(String[] args) {
-        DecimalFormat df = new DecimalFormat("#.##");
+        double BGN = 1.64549;
+        double USD;
+
         Scanner scanner = new Scanner(System.in);
 
-        double USD = Double.parseDouble(scanner.nextLine());
-        double BGN = USD * 1.79549 ;
+        USD = scanner.nextDouble();
+        double convertedCurrency = BGN * USD;
 
-        System.out.println(df.format(BGN) + " BGN");
+        convertedCurrency = convertedCurrency * 100;
+        convertedCurrency = Math.floor(convertedCurrency) / 100;
+
+        System.out.println(convertedCurrency);
+
     }
 }
+
+
+
+
+
+
+
 
 
 
