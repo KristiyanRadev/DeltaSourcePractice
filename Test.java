@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Application {
+public class Test {
     public static void main(String[] args) {
         double BGN = 1.64549;
         double USD;
